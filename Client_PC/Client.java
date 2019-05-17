@@ -8,14 +8,13 @@ public void startClient()
 {
     Scanner in=new Scanner(System.in);
     byte []b=new byte[4096];
-    String ip="192.168.42.78";
+    String ip="192.168.42.78"; //TODO , need to take dynamically
     String input="";
 	try
 	{
 		s=new Socket(ip,6668);
 		dout=new DataOutputStream(s.getOutputStream());
 		DataInputStream dis=new DataInputStream(s.getInputStream());
-		FileInputStream file=new FileInputStream("love.mp4");
 		int receiverPort=dis.readInt();
 		Thread fileSendThread=new Thread(new SendFile(ip,receiverPort));
 		fileSendThread.start();
