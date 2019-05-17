@@ -20,4 +20,6 @@ java ClientGUI
 java ServerGUI
 ```
 ## Dependencies
-`omxplayer` client needs to be available in raspberry pi, raspbian `wheezy` version OS has omxplayer pre-installed.
+`omxplayer` client needs to be available in raspberry pi, raspbian `wheezy` version OS has omxplayer pre-installed.<br/>
+`JRE` for executing program  <br/>
+`JDK` for compiling <br/>
