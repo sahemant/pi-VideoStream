@@ -1,6 +1,6 @@
 # Raspberry PI Video Stream
 Using this we can play any video from our system/computer to Raspberry PI connected in the same network. video format must be supported by raspberry pi.
-## Installation
+## Compiling
 1. Compile both `Server_PI` and `Client_PC` within Raspberry or Computer in which Java JDK is installed.<br />
 ```bash
 javac ServerGUI.java
@@ -19,3 +19,5 @@ java ClientGUI
 ```bash
 java ServerGUI
 ```
+## Dependencies
+`omxplayer` client needs to be available in raspberry pi, raspbian `wheezy` version OS has omxplayer pre-installed.
